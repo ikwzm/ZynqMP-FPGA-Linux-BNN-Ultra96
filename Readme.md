@@ -10,3 +10,14 @@ ZynqMP-FPGA-Linux BNN (Binary Neural Network) binary and test code for Ultra96
  * https://github.com/Xilinx/BNN-PYNQ.git
  * https://github.com/Xilinx/xilinx-tiny-cnn.git
 
+# Install
+
+	(T.B.D)
+
+# Run
+
+	(T.B.D)
+
+# Build
+
+	(T.B.D)
