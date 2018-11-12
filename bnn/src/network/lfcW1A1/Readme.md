@@ -1,23 +1,23 @@
-## Build lfcW1A2 Bit Stream File for Ultra96
+## Build lfcW1A1 Bit Stream File for Ultra96
 
 ### Build IP
 
 ```console
-vivado% cd lfcW1A2/hls
+vivado% cd hls
 vivado% vivado_hls -f run_hls.tcl
 ```
 
 ### Build Vivado Project
 
 ```console
-vivado% cd lfcW1A2/project
+vivado% cd project
 vivado% vivado -mode batch -source create_project.tcl
 ```
 
 ### Implementation Project
 
 ```console
-vivado% cd lfcW1A2/project
+vivado% cd project
 vivado% vivado -mode batch -source implementation.tcl
 ```
 
@@ -25,7 +25,7 @@ vivado% vivado -mode batch -source implementation.tcl
 
 
 ```console
-vivado% cd lfcW1A2/project
-vivado% bootgen -image firmware.bif -arch zynqmp -w -o ../lfcW1A2.bin
+vivado% cd project
+vivado% bootgen -image firmware.bif -arch zynqmp -w -o ../../../../firmwares/ultra96/lfcW1A1-ultra96.bin
 ```
 

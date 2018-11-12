@@ -1,6 +1,6 @@
-set config_network_name         "lfcW1A2"
-set config_param_name           "mnist"
-set config_expected_result      "3"
+set config_network_name         "cnvW1A1"
+set config_param_name           "cifar10"
+set config_expected_result      "4"
 set config_part_name            "xczu3eg-sbva484-1-i"
 set config_clock_period         "3"
 
@@ -8,13 +8,13 @@ set config_toplevel_name        "BlackBoxJam"
 set config_project_name         "project"
 set config_project_directory    [file dirname [info script]]
 
-set config_top_directory        [file join $config_project_directory  ".." ".."]
+set config_top_directory        [file join $config_project_directory  ".." ".." ".." ".." ".."]
 set config_bnn_pynq_directory   [file join $config_top_directory      "BNN-PYNQ"]
 set config_tiny_cnn_directory   [file join $config_top_directory      "xilinx-tiny-cnn"]
 
 set config_hw_src_directory     [file join $config_bnn_pynq_directory "bnn" "src" "network" $config_network_name "hw"]
 set config_params_directory     [file join $config_bnn_pynq_directory "bnn" "params" $config_param_name $config_network_name]
-set config_test_image_file      [file join $config_bnn_pynq_directory "tests" "Test_image" "3.image-idx3-ubyte"]
+set config_test_image_file      [file join $config_bnn_pynq_directory "tests" "Test_image" "deer.bin"]
 set config_lib_src_directory    [file join $config_bnn_pynq_directory "bnn" "src" "library" "hls"]
 set config_host_src_directory   [file join $config_bnn_pynq_directory "bnn" "src" "host"]
 

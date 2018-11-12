@@ -8,7 +8,7 @@ set config_toplevel_name        "BlackBoxJam"
 set config_project_name         "project"
 set config_project_directory    [file dirname [info script]]
 
-set config_top_directory        [file join $config_project_directory  ".." ".."]
+set config_top_directory        [file join $config_project_directory  ".." ".." ".." ".." ".."]
 set config_bnn_pynq_directory   [file join $config_top_directory      "BNN-PYNQ"]
 set config_tiny_cnn_directory   [file join $config_top_directory      "xilinx-tiny-cnn"]
 

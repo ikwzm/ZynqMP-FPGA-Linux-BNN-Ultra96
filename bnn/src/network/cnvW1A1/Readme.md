@@ -1,23 +1,23 @@
-## Build cnvW2A2 Bit Stream File for Ultra96
+## Build cnvW1A1 Bit Stream File for Ultra96
 
 ### Build IP
 
 ```console
-vivado% cd cnvW2A2/hls
+vivado% cd hls
 vivado% vivado_hls -f run_hls.tcl
 ```
 
 ### Build Vivado Project
 
 ```console
-vivado% cd cnvW2A2/project
+vivado% cd project
 vivado% vivado -mode batch -source create_project.tcl
 ```
 
 ### Implementation Project
 
 ```console
-vivado% cd cnvW2A2/project
+vivado% cd project
 vivado% vivado -mode batch -source implementation.tcl
 ```
 
@@ -25,7 +25,7 @@ vivado% vivado -mode batch -source implementation.tcl
 
 
 ```console
-vivado% cd cnvW2A2/project
-vivado% bootgen -image firmware.bif -arch zynqmp -w -o ../cnvW2A2.bin
+vivado% cd project
+vivado% bootgen -image firmware.bif -arch zynqmp -w -o ../../../../firmwares/ultra96/cnvW1A1-ultra96.bin
 ```
 
